@@ -12,9 +12,12 @@
     "lint": "next lint && npx prettier --check \"{__tests__,components,pages,styles}/**/*.{ts,tsx,js,jsx}\" && npx tsc --noEmit"
   },
   "dependencies": {
+    "@gelatonetwork/relay-sdk": "^4.0.0",
     "@headlessui/react": "^1.7.3",
     "@heroicons/react": "^2.0.12",
     "@privy-io/react-auth": "1.28.2",
+    "@reservoir0x/ethers-wallet-adapter": "^0.0.4",
+    "@reservoir0x/reservoir-sdk": "^1.1.14",
     "@tailwindcss/forms": "^0.5.3",
     "next": "latest",
     "react": "18.2.0"

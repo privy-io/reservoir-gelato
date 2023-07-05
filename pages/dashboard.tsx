@@ -2,6 +2,7 @@ import {useRouter} from 'next/router';
 import React, {useEffect} from 'react';
 import {usePrivy} from '@privy-io/react-auth';
 import Head from 'next/head';
+import BuyButton from '../components/reservoir/BuyButton';
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -177,6 +178,12 @@ export default function DashboardPage() {
                   Connect phone
                 </button>
               )}
+            </div>
+
+
+            <p className="mt-6 font-bold uppercase text-sm text-gray-600">Reservoir Actions</p>
+            <div className="mt-2 flex gap-4 flex-wrap">
+              <BuyButton />
             </div>
 
             <p className="mt-6 font-bold uppercase text-sm text-gray-600">User object</p>
