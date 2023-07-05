@@ -1,5 +1,4 @@
 import { getClient } from '../../lib/utils';
-// import { adaptEthersSigner } from '@reservoir0x/ethers-wallet-adapter';
 import { useWallets } from '@privy-io/react-auth';
 import { getGelatoAdapter } from '../../lib/gelatoAdapter';
 
@@ -26,11 +25,11 @@ export default function BuyButton() {
                         collection: collectionId,
                     },
                     ],
-                    // options: {
-                    //     currency: 'USDC',
-                    //     usePermit: true,
+                    options: {
+                        currency: '0x07865c6e87b9f70255377e024ace6630c1eaa37f',
+                        usePermit: true,
 
-                    // },
+                    },
                     wallet: getGelatoAdapter(provider),
                     onProgress: () => {},
                 });

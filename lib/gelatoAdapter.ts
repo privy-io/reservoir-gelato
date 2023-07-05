@@ -51,7 +51,8 @@ export const getGelatoAdapter = (provider: Web3Provider): ReservoirWallet => {
             user: address
         };
         const relayResponse = await relay.sponsoredCallERC2771(request, provider, process.env.NEXT_PUBLIC_GELATO_API_KEY as string);
-        console.log(relayResponse);
+        const {taskId} = relayResponse;
+        console.log(taskId);
 
         // Poll status of relayResponse.taskId and return transaction hash
         return '0x';
